@@ -16,7 +16,7 @@ const Press = () => {
    return (
       <S.Wrapper>
          <Header />
-         <S.WrapImage src="/img/NoticeLogo.png"/>
+         <S.WrapImage src="/img/PressLogo.png"/>
          <S.MenuTab>구현예정</S.MenuTab>
 
          <S.MainContainer>

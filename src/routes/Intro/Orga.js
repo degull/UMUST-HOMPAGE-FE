@@ -8,7 +8,7 @@ const Orga = () => {
    return (
       <S.Wrapper>
          <Header />
-         <S.WrapImage src="/img/CEO.png"/>
+         <S.WrapImage src="/img/orgaLogo.png"/>
          <S.MenuTab>구현예정</S.MenuTab>
 
          <S.MainComponent1 src="/img/Orga.png" />

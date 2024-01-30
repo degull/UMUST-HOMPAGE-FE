@@ -8,7 +8,7 @@ const Invest = () => {
    return (
       <S.Wrapper>
          <Header />
-         <S.WrapImage src="/img/CEO.png"/>
+         <S.WrapImage src="/img/invest.png"/>
          <S.MenuTab>구현예정</S.MenuTab>
 
          <S.MainComponent src="/img/invest.png" />

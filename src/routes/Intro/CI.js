@@ -9,7 +9,7 @@ const CI = () => {
    return (
       <S.Wrapper>
          <Header />
-         <S.WrapImage src="/img/CEO.png"/>
+         <S.WrapImage src="/img/ci.png"/>
          <S.MenuTab>구현예정</S.MenuTab>
 
          <S.MainComponent1 src="/img/mark1.png" />

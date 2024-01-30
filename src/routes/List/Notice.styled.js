@@ -91,3 +91,9 @@ export const PostDate = styled.div`
    font-size: 14px;
    flex: 1;
 `;
+export const PostViews = styled.div`
+   font-size: 14px;
+   flex: 1;
+`;
+
+
