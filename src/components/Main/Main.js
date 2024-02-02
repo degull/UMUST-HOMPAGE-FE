@@ -17,6 +17,7 @@ const images = [
 
 export default function Main() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [currentDot, setCurrentDot] = useState(0);
   const [isMouseOver, setIsMouseOver] = useState(false);
   const [touchStartX, setTouchStartX] = useState(null);
   /* API 상태관리 */
@@ -120,6 +121,20 @@ export default function Main() {
     setTouchStartX(null);
   };
 
+
+
+  const handleArrowRightClick = () => {
+    const nextImage = (currentImage + 1) % images.length;
+    setCurrentImage(nextImage);
+    setCurrentDot(nextImage);
+  };
+
+  const handleArrowLeftClick = () => {
+    const prevImage = (currentImage - 1 + images.length) % images.length;
+    setCurrentImage(prevImage);
+    setCurrentDot(prevImage);
+  };
+
   return (
     <S.Wrapper>
       <Header />
@@ -139,8 +154,18 @@ export default function Main() {
               filter: isMouseOver ? 'brightness(0.9)' : 'none',
             }}
           />
+          
         ))}
+
+      <S.Arrow_R src='/img/arrow_r.png' onClick={handleArrowRightClick} />
+      <S.Arrow_L src='/img/arrow_l.png' onClick={handleArrowLeftClick} />
+      <S.DotContainer>
+        {images.map((_, index) => (
+          <S.Dot key={index} active={index === currentDot} />
+        ))}
+      </S.DotContainer>
         <S.SlideBtn src='/img/slide_btn.png' />
+
       </S.ImageSlide>
 
       {/* 유튜브 영상 출력 */}

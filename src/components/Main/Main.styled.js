@@ -1,5 +1,12 @@
 import styled from "@emotion/styled";
 
+const images = [
+   '/img/slide_01.png',
+   '/img/slide_02.png',
+   '/img/slide_03.png',
+ ];
+ 
+
 export const Wrapper = styled.div`
    margin: 0;
    padding: 0;
@@ -9,15 +16,31 @@ export const Wrapper = styled.div`
 `;
 
 export const ImageSlide = styled.div`
-   width: 100%;
-   height: 100%;
-   position: relative;
-   overflow: hidden;
-   display: flex;
-   animation: slideAnimation 9s infinite; 
-   transition: transform 0.3s ease;
-   touch-action: pan-y; 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  animation: slideAnimation 9s infinite; 
+  transition: transform 0.3s ease;
+  touch-action: pan-y;
 `;
+
+export const DotContainer = styled.div`
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+`;
+
+export const Dot = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: ${(props) => (props.active ? '#fff' : '#999')};
+`;
+
 
 export const SlideImage = styled.img`
    width: 100%;
@@ -75,6 +98,24 @@ export const MoreBtn = styled.img`
 export const Section2 = styled.div`
    width: 100%;
    padding: 80px 0px;
+`;
+
+export const Arrow_R = styled.img`
+   position: absolute;
+   width: 50px;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+`;
+
+export const Arrow_L = styled.img`
+   position: absolute;
+   width: 50px;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
 `;
 
 
@@ -308,7 +349,7 @@ export const EventContainer = styled.div`
    width: 270px;
    height: 180px;
    border: 1px solid #D9D9D9;
-   margin-left: 299px;
+   margin-left: 299.5px;
    border-radius: 10px;
    margin-top: 39px;
    display: flex;

@@ -28,8 +28,7 @@ const Header = () => {
   }, []);
   
   return (
-    <S.Wrapper isScrolled={isScrolled} onMouseLeave={handleMouseLeave}>
-      <S.Header isScrolled={isScrolled}>
+    <S.Wrapper isScrolled={isScrolled} onMouseLeave={handleMouseLeave}>      <S.Header isScrolled={isScrolled}>
       <Link to="/">
           <S.Logo src='/img/Logo.png' alt='Logo' />
         </Link>
