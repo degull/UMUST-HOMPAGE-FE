@@ -215,16 +215,17 @@ export default function Main() {
           </S.IconContainer>
 
           <S.IconContainer>
+            <Link to="/List/Notice">
               <S.Notice src='/img/notice.png'/>
               <S.NoticeTitle>공지사항</S.NoticeTitle>
+            </Link>
           </S.IconContainer>
 
           <S.IconContainer>
-          <Link to="/Map/Map">
+            <Link to="/Map/Map">
               <S.Map src='/img/map.png'/>
-              
-                <S.MapTitle>오시는 길</S.MapTitle>
-              </Link>
+              <S.MapTitle>오시는 길</S.MapTitle>
+            </Link>
           </S.IconContainer>
         </S.Icontainer>
       </S.Section2>
@@ -292,7 +293,7 @@ export default function Main() {
 
         <S.Section3Right>
             <S.RightContent>
-              <S.Album src='/img/Album.png'/>
+              <S.Album src='/img/test_01.gif'/>
             </S.RightContent>
         </S.Section3Right>
       </S.Section3>

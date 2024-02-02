@@ -22,6 +22,7 @@ import Press from './routes/List/Press';
 import Event from './routes/List/Event';
 import Album from './routes/List/Album';
 import Map from './etc/Map/Map';
+import Contact from './etc/Contact/Contact';
 
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
 
         {/* 푸터 */}
         <Route path="/Map/Map" element={<Map />} />
+        <Route path="/Contact/Contact" element={<Contact />} />
 
         
       </Routes>

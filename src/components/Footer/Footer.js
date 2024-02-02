@@ -58,7 +58,7 @@ export default function Footer() {
             <Link to="/terms">
               <S.Terms>이용약관</S.Terms>
             </Link>
-            <Link to="/contact">
+            <Link to="/Contact/Contact">
               <S.Contact>문의</S.Contact>
             </Link>
           </S.SubMenu>

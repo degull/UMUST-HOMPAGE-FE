@@ -288,6 +288,7 @@ export const RightContent = styled.div`
 export const Album = styled.img`
    width: 570px;
    height: 450px;
+   border-radius: 12px;
 `;
 
 
