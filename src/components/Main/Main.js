@@ -4,6 +4,7 @@ import * as S from './Main.styled';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 const images = [
   '/img/slide_01.png',
@@ -212,7 +213,9 @@ export default function Main() {
 
             {/* 보도자료 */}
             <S.PressContainer>
-              <S.PressLabel>[보도자료]</S.PressLabel>
+              <S.PressLabel>
+                <Link to="/List/Press">[보도자료]</Link>
+              </S.PressLabel>
               {loading ? (
                 <div>Loading...</div>
               ) : (
@@ -233,7 +236,9 @@ export default function Main() {
 
             {/* 행사정보 */}
             <S.EventContainer>
-              <S.PressLabel>[행사정보]</S.PressLabel>
+              <S.PressLabel>
+                <Link to="/List/Event">[행사정보]</Link>
+              </S.PressLabel>
               {loading ? (
                 <div>Loading...</div>
               ) : (

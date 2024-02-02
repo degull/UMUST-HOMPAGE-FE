@@ -66,6 +66,7 @@ export const PostListHeader = styled.div`
    background: #f5f4d3;
    padding: 10px;
    border: 1px solid #dddddd;
+   margin-right: 30px;
 `;
 
 export const PostListLabel = styled.div`

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import * as S from './Header.styled';
 import { Link } from 'react-router-dom';
+import * as S from './Header.styled';
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);

@@ -11,7 +11,7 @@ const Invest = () => {
          <S.WrapImage src="/img/invest.png"/>
          <S.MenuTab>구현예정</S.MenuTab>
 
-         <S.MainComponent src="/img/invest.png" />
+         <S.MainComponent src="/img/invest_.png" />
 
          <Footer />
       </S.Wrapper>

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-   /* margin: 0; */
+   margin: 0;
    padding: 0;
    width: 100%;
    height: 100%;
@@ -277,8 +277,9 @@ export const PressContainer = styled.div`
    height: 180px;
    border: 1px solid #D9D9D9;
    border-radius: 10px;
-   margin-top: 38px;
+   margin-top: 39px;
    display: flex;
+   margin-left: -0.8px;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -307,9 +308,9 @@ export const EventContainer = styled.div`
    width: 270px;
    height: 180px;
    border: 1px solid #D9D9D9;
-   margin-left: 300px;
+   margin-left: 299px;
    border-radius: 10px;
-   margin-top: 38px;
+   margin-top: 39px;
    display: flex;
    flex-direction: column;
    justify-content: center;
