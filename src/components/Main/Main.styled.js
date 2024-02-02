@@ -21,10 +21,12 @@ export const ImageSlide = styled.div`
   position: relative;
   overflow: hidden;
   display: flex;
-  animation: slideAnimation 9s infinite; 
+  animation: slideAnimation 1s ease-in-out forwards; 
   transition: transform 0.3s ease;
   touch-action: pan-y;
 `;
+
+
 
 export const DotContainer = styled.div`
   position: absolute;

@@ -138,6 +138,7 @@ export default function Main() {
   return (
     <S.Wrapper>
       <Header />
+      
       <S.ImageSlide
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -164,6 +165,8 @@ export default function Main() {
           <S.Dot key={index} active={index === currentDot} />
         ))}
       </S.DotContainer>
+
+      
         <S.SlideBtn src='/img/slide_btn.png' />
 
       </S.ImageSlide>
