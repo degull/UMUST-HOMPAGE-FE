@@ -46,7 +46,7 @@ export default function Footer() {
         <S.Upper>
           <S.Logo>UMUST R&D</S.Logo>
           <S.SubMenu>
-            <Link to="/map">
+            <Link to="/Map/Map">
               <S.Map>찾아오시는 길</S.Map>
             </Link>
             <Link to="/site-map">

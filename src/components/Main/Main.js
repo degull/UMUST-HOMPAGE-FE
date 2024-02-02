@@ -220,8 +220,11 @@ export default function Main() {
           </S.IconContainer>
 
           <S.IconContainer>
+          <Link to="/Map/Map">
               <S.Map src='/img/map.png'/>
-              <S.MapTitle>오시는 길</S.MapTitle>
+              
+                <S.MapTitle>오시는 길</S.MapTitle>
+              </Link>
           </S.IconContainer>
         </S.Icontainer>
       </S.Section2>

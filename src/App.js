@@ -21,6 +21,7 @@ import Notice from './routes/List/Notice';
 import Press from './routes/List/Press';
 import Event from './routes/List/Event';
 import Album from './routes/List/Album';
+import Map from './etc/Map/Map';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
+        {/* 헤더 */}
         <Route path="/Intro/Ceo" element={<Ceo />} />
         <Route path="/Intro/Outline" element={<Outline />} />
         <Route path="/Intro/Ci" element={<Ci />} />
@@ -48,6 +50,12 @@ const App = () => {
         <Route path="/List/Press" element={<Press />} />
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />
+
+
+        {/* 푸터 */}
+        <Route path="/Map/Map" element={<Map />} />
+
+        
       </Routes>
     </BrowserRouter>
   );
