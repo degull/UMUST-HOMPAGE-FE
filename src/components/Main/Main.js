@@ -255,7 +255,7 @@ export default function Main() {
                   press.map((item, index) => (
                     <S.Press key={index}>
                       <div style={{ fontWeight:'700', fontSize: '12px', color: '#333' }}>{item.title.slice(0, 15)}</div>                      
-                      <div style={{ fontSize: '11px', color: '#555', lineHeight: '2' }}>{item.content}</div>
+                      <div style={{ fontSize: '11px', color: '#555', lineHeight: '2' }}>{item.content.slice(0, 95)}</div>
                       <div style={{ fontSize: '12px', color: '#777',position: 'absolute',right : '10px'}}>{item.createdAt.split('T')[0]}</div>                   
 
                     </S.Press>
@@ -278,7 +278,7 @@ export default function Main() {
                   events.map((item, index) => (
                     <S.Event key={index}>
                       <div style={{ fontWeight:'700', fontSize: '12px', color: '#333' }}>{item.title.slice(0, 15)}</div>                      
-                      <div style={{ fontSize: '11px', color: '#555', lineHeight: '2' }}>{item.content}</div>
+                      <div style={{ fontSize: '11px', color: '#555', lineHeight: '2' }}>{item.content.slice(0, 95)}</div>
                       <div style={{ fontSize: '12px', color: '#777',position: 'absolute',right : '10px'}}>{item.createdAt.split('T')[0]}</div>                   
                     </S.Event>
                   ))
