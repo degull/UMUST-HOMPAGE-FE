@@ -70,6 +70,9 @@ export default function Footer() {
             <br />
             <br />
             Email : u-service@naver.com
+            <br />
+            <br />
+            Tel: 02-998-5552
           </S.Addr>
           <S.Copyright>Copyright &copy; 2024 UMUST R&D all right reserved.</S.Copyright>
         </S.Lower>
