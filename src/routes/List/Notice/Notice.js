@@ -7,8 +7,9 @@ import { Outlet } from 'react-router-dom';
 
 const Notice = () => {
   const navigate = useNavigate();
-
   const [posts, setPosts] = useState([]);
+  const pageSize = 10;
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +26,8 @@ const Notice = () => {
 
     fetchData();
   }, []);
+
+  
 
   const navigateToDetail = (postId) => {
     navigate(`/Board/notices/${postId}`);
@@ -51,20 +54,21 @@ const Notice = () => {
             <S.PostListLabel>조회수</S.PostListLabel>
           </S.PostListHeader>
           
+
           <S.PostList>
-            {posts.map(post => (
-              <S.PostItem key={post.id}>
-                <S.PostNumber>{post.id}</S.PostNumber>
-                <S.PostTitle onClick={() => navigateToDetail(post.id)}>
-                  {post.title}
-                </S.PostTitle>
-                <S.PostDate>{(new Date(post.createdAt)).toLocaleDateString()}</S.PostDate>
-                <S.PostAuthor>{post.createdBy}</S.PostAuthor>
-                <S.PostViews>{post.views}</S.PostViews>
-                <S.ViewCount>{post.views}</S.ViewCount>
-              </S.PostItem>
-            ))}
-          </S.PostList>
+  {posts.map(post => (
+    <S.PostItem key={post.id}>
+      <S.PostNumber>{post.id}</S.PostNumber>
+      {/* Use the new PostTitleContainer for the title */}
+      <S.PostTitleContainer onClick={() => navigateToDetail(post.id)}>
+        {post.title}
+      </S.PostTitleContainer>
+      <S.PostDate>{(new Date(post.createdAt)).toLocaleDateString()}</S.PostDate>
+      <S.PostAuthor>{post.createdBy}</S.PostAuthor>
+      <S.ViewCount>{post.view}</S.ViewCount>
+    </S.PostItem>
+  ))}
+</S.PostList>
         </S.PostListWrapper>
       </S.MainContainer>
 
