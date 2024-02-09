@@ -17,7 +17,10 @@ import Lab from './routes/Research/Lab';
 import Medical from './routes/Product/Medical';
 import Cosmetic from './routes/Product/Cosmetic';
 
-import Notice from './routes/List/Notice';
+import Notice from './routes/List/Notice/Notice';
+import NoticeList from './routes/List/Notice/NoticeList';
+import NoticeDetail from './routes/List/Notice/NoticeDetail';
+
 import Press from './routes/List/Press';
 import Event from './routes/List/Event';
 import Album from './routes/List/Album';
@@ -48,6 +51,8 @@ const App = () => {
 
 
         <Route path="/List/Notice" element={<Notice />} />
+        <Route path="/notices" element={<NoticeList />} />
+        <Route path="/notices/:noticeId" element={<NoticeDetail />} />
         <Route path="/List/Press" element={<Press />} />
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />

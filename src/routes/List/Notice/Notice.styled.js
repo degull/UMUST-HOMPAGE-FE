@@ -63,14 +63,14 @@ export const PostListWrapper = styled.div`
 
 export const PostListHeader = styled.div`
    display: flex;
-   background: #f5f4d3;
+   background: #D9D9D9;
    padding: 10px;
    border: 1px solid #dddddd;
    margin-right: 30px;
 `;
 
 export const PostListLabel = styled.div`
-   font-size: 16px;
+   font-size: 14px;
    font-weight: bold;
    flex: 1;
 `;
@@ -98,3 +98,19 @@ export const PostViews = styled.div`
 `;
 
 
+export const NoticeDetailContainer = styled.div``;
+
+
+export const DetailContainer = styled.div``;
+
+export const NoticeTitle = styled.div``;
+
+export const NoticeImages = styled.div``;
+
+export const NoticeDetails = styled.div``
+export const  Buttons= styled.div``
+export const ConfirmationPopup = styled.div``
+export const ConfirmationPopupContent = styled.div``;
+
+export const ConfirmationButtons = styled.div``
+export const NoticeFiles = styled.div``
