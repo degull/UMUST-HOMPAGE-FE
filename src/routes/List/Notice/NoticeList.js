@@ -1,28 +1,36 @@
-// NoticeList.js
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './Notice.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
 
+
 const NoticeList = () => {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
+  const pageSize = 10;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = 'https://eb-umust.umust302.shop/api/articles/NOTICE';
+        const apiUrl = `https://eb-umust.umust302.shop/api/articles/NOTICE?page=${currentPage}&size=${pageSize}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        setPosts(data.content || []);
+        if (Array.isArray(data.content)) {
+          setPosts(data.content);
+          setTotalPages(data.totalPages);
+        } else {
+          console.error('API 응답의 content 속성이 배열이 아닙니다:', data);
+        }
       } catch (error) {
         console.error('공지사항 불러오기 실패:', error);
       }
     };
 
     fetchData();
-  }, []);
+  }, [currentPage]);
 
   return (
     <S.Wrapper>
@@ -46,7 +54,6 @@ const NoticeList = () => {
             {posts.map(post => (
               <S.PostItem key={post.id}>
                 <S.PostNumber>{post.id}</S.PostNumber>
-                {/* Link를 사용하여 해당 공지사항의 상세 페이지로 이동 */}
                 <S.PostTitle>
                   <Link to={`/notices/${post.id}`}>{post.title}</Link>
                 </S.PostTitle>
@@ -57,6 +64,19 @@ const NoticeList = () => {
             ))}
           </S.PostList>
         </S.PostListWrapper>
+
+        {/* 페이징 추가 */}
+        <S.PaginationContainer>
+          {Array.from({ length: totalPages }, (_, i) => i).map((pageNumber) => (
+            <S.PaginationItem
+              key={pageNumber}
+              onClick={() => setCurrentPage(pageNumber)}
+              active={currentPage === pageNumber}
+            >
+              {pageNumber + 1}
+            </S.PaginationItem>
+          ))}
+        </S.PaginationContainer>
       </S.MainContainer>
 
       <Footer />

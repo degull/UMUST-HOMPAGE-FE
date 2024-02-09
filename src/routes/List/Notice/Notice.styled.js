@@ -22,7 +22,7 @@ export const MainContainer = styled.div`
    max-width: 1280px;
    margin: 0 auto;
    width: 100%;
-   height: 500px;
+   height: 150%;
 `;
 
 export const Title = styled.div`
@@ -38,8 +38,11 @@ export const Memo = styled.div`
 
 export const Border = styled.div`
     border: 3px solid #999;
-    width: 1200px;
-;`;
+    width: 1300px;
+    margin-top: 20px;
+`;
+
+
 
 export const PostList = styled.div`
    display: flex;
@@ -104,16 +107,48 @@ export const PostViews = styled.div`
 `;
 
 
-export const NoticeDetailContainer = styled.div``;
+export const NoticeDetailContainer = styled.div`
+
+   `;
 
 
-export const DetailContainer = styled.div``;
+export const DetailContainer = styled.div`
+   height: auto;
+`;
 
-export const NoticeTitle = styled.div``;
+export const NoticeTitle = styled.div`
+    display: block;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 18px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+`;
 
-export const NoticeImages = styled.div``;
+export const Content = styled.div`
+   font-size: 15px;
+   line-height: 28px;
+`;
 
-export const NoticeDetails = styled.div``
+export const NoticeImages = styled.div`
+   margin: 0 auto;
+
+   img {
+      width: 150px;
+      
+      
+   }
+`;
+
+export const NoticeDetails = styled.div`
+   font-size: 11px;
+   text-align: end;
+   color: #777;
+   margin-bottom: 10px;
+`;
+
+
 export const  Buttons= styled.div``
 export const ConfirmationPopup = styled.div``
 export const ConfirmationPopupContent = styled.div``;
@@ -126,4 +161,21 @@ export const ViewCount = styled.div`
   text-align: center;
   display: flex;
   margin-right: 190px;
+`;
+
+export const PaginationContainer = styled.div`
+  display: flex;
+  margin-right: 150px;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+export const PaginationItem = styled.div`
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: ${({ active }) => (active ? '#ddd' : 'transparent')};
+  border-radius: 4px;
+  font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
 `;
