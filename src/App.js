@@ -52,7 +52,7 @@ const App = () => {
 
         <Route path="/List/Notice" element={<Notice />} />
         <Route path="/notices" element={<NoticeList />} />
-        <Route path="/notices/:noticeId" element={<NoticeDetail />} />
+        <Route path="/Board/notices/:noticeId" element={<NoticeDetail />} />
         <Route path="/List/Press" element={<Press />} />
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />

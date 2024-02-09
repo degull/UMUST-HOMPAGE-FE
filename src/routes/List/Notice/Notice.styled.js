@@ -26,15 +26,20 @@ export const MainContainer = styled.div`
 `;
 
 export const Title = styled.div`
-   font-size: 17px;
-   font-weight: bold;
+   font-size: 22px;
+   font-weight: 900;
    padding: 30px 30px 15px 30px;
 `;
 
 export const Memo = styled.div`
-   font-size: 14px;
+   font-size: 11px;
    padding: 0 30px 30px 30px;
 `;
+
+export const Border = styled.div`
+    border: 3px solid #999;
+    width: 1200px;
+;`;
 
 export const PostList = styled.div`
    display: flex;
@@ -63,10 +68,11 @@ export const PostListWrapper = styled.div`
 
 export const PostListHeader = styled.div`
    display: flex;
-   background: #D9D9D9;
-   padding: 10px;
+/*    background: #D9D9D9;
+ */   padding: 10px;
    border: 1px solid #dddddd;
    margin-right: 30px;
+   width: 1200px;
 `;
 
 export const PostListLabel = styled.div`
@@ -114,3 +120,10 @@ export const ConfirmationPopupContent = styled.div``;
 
 export const ConfirmationButtons = styled.div``
 export const NoticeFiles = styled.div``
+
+export const ViewCount = styled.div`
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  margin-right: 190px;
+`;

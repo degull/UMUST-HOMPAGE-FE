@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import * as S from './Notice.styled';
 import axios from 'axios';
-import Main from '../../../components/Main/Main';
 import ReactMarkdown from 'react-markdown';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 
 const NoticeDetail = ({ onDelete, onEdit }) => {
   const navigate = useNavigate();
-  const { noticeId } = useParams();
+  const { noticeId } = useParams(); 
   const [notice, setNotice] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
 
@@ -71,8 +72,15 @@ const NoticeDetail = ({ onDelete, onEdit }) => {
   };
 
   return (
-    <S.NoticeDetailContainer>
-      <Main />
+    <S.Wrapper>
+      <Header />
+      <S.WrapImage src="/img/NoticeLogo.png" />
+      <S.MenuTab>구현예정</S.MenuTab>
+      <S.MainContainer>
+      <S.Title>공지사항</S.Title>
+        <S.Memo>유머스트알엔디의 최신 소식을 알려드립니다.</S.Memo>
+        <S.Border />
+
       <S.DetailContainer>
         <S.NoticeTitle>{notice.title || '제목 없음'}</S.NoticeTitle>
         <ReactMarkdown>{notice.content}</ReactMarkdown>
@@ -119,7 +127,9 @@ const NoticeDetail = ({ onDelete, onEdit }) => {
           </S.NoticeFiles>
         )}
       </S.DetailContainer>
-    </S.NoticeDetailContainer>
+      </S.MainContainer>
+      <Footer />
+    </S.Wrapper>
   );
 };
 
