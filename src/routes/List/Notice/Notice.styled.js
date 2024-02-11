@@ -65,6 +65,8 @@ overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
 width: 300px; 
+cursor: pointer;
+text-align: center;
 `;
 
 export const PostAuthor = styled.div`
@@ -189,6 +191,7 @@ export const PaginationContainer = styled.div`
   margin-right: 150px;
   justify-content: center;
   margin-top: 20px;
+  margin: 30px 30px;
 `;
 
 export const PaginationItem = styled.div`
