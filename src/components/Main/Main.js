@@ -200,8 +200,10 @@ export default function Main() {
           </S.IconContainer>
 
           <S.IconContainer>
+            <Link to="/Research/Paper">
               <S.Thesis src='/img/Thesis.png'/>
               <S.ThesisTitle>논문</S.ThesisTitle>
+            </Link>
           </S.IconContainer>
 
           <S.IconContainer>

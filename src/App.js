@@ -25,6 +25,7 @@ import Event from './routes/List/Event/Event';
 import Album from './routes/List/Album/Album';
 import Map from './etc/Map/Map';
 import Contact from './etc/Contact/Contact';
+import Paper from './routes/Research/Paper/Paper';
 
 
 const App = () => {
@@ -43,6 +44,10 @@ const App = () => {
 
         <Route path="/Research/Tech" element={<Tech />} />
         <Route path="/Research/Lab" element={<Lab />} />
+
+        {/* 논문 */}
+        <Route path="/Research/Paper" element={<Paper />} />
+
 
         <Route path="/Product/Medical" element={<Medical />} />
         <Route path="/Product/Cosmetic" element={<Cosmetic />} />
