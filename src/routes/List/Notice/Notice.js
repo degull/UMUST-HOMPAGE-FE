@@ -99,9 +99,7 @@ const Notice = () => {
             ))}
           </S.PostList>
 
-
-
-{/*           <S.PostList>
+{/* <S.PostList>
             {notices.map(post => (
               <S.PostItem key={post.id}>
                 <S.PostNumber>{post.id}</S.PostNumber>
@@ -114,7 +112,6 @@ const Notice = () => {
               </S.PostItem>
             ))}
           </S.PostList> */}
-
         </S.PostListWrapper>
 
 

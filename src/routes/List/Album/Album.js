@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import * as S from './Album.styled';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-
 
 const Album = () => {
 

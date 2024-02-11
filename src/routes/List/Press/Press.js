@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './Press.styled';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 
 const Press = () => {
    const [press, setPress] = useState([]);

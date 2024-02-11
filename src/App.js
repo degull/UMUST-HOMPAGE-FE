@@ -20,9 +20,9 @@ import Cosmetic from './routes/Product/Cosmetic';
 import Notice from './routes/List/Notice/Notice';
 import NoticeDetail from './routes/List/Notice/NoticeDetail';
 
-import Press from './routes/List/Press';
-import Event from './routes/List/Event';
-import Album from './routes/List/Album';
+import Press from './routes/List/Press/Press';
+import Event from './routes/List/Event/Event';
+import Album from './routes/List/Album/Album';
 import Map from './etc/Map/Map';
 import Contact from './etc/Contact/Contact';
 

@@ -28,12 +28,12 @@ export const MainContainer = styled.div`
 export const Title = styled.div`
    font-size: 22px;
    font-weight: 900;
-   padding: 30px 30px 15px 30px;
+   padding: 50px 30px 15px 8px;
 `;
 
 export const Memo = styled.div`
    font-size: 11px;
-   padding: 0 30px 30px 30px;
+   padding: 0 30px 10px 8px;
 `;
 
 export const Border = styled.div`
@@ -47,7 +47,7 @@ export const Border = styled.div`
 export const PostList = styled.div`
    display: flex;
    flex-direction: column;
-   margin-top: 20px;
+   margin-top: 25px;
 `;
 
 export const PostItem = styled.div`
@@ -64,18 +64,20 @@ export const PostItem = styled.div`
 `;
 
 export const PostTitleContainer = styled.div`
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
-width: 300px; 
-cursor: pointer;
-text-align: center;
-font-size: 12px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 380px; 
+   cursor: pointer;
+   text-align: center;
+   font-size: 12px;
+   margin-left:17px;
 `;
 
 export const PostAuthor = styled.div`
    font-size: 11px;
-   margin-right: 50px;
+   margin-right: 110px;
+   text-align: center;
 `;
 
 export const PostListWrapper = styled.div`
@@ -117,6 +119,7 @@ export const PostListLabel = styled.div`
 export const PostNumber = styled.div`
    font-size: 11px;
    font-weight: bold;
+   text-align: center;
 `;
 
 export const PostTitle = styled.div`
@@ -126,7 +129,8 @@ export const PostTitle = styled.div`
 
 export const PostDate = styled.div`
    font-size: 11px;
-   margin-right: 70px;
+   margin-right: 100px;
+
 `;
 export const PostViews = styled.div`
    font-size: 14px;
@@ -185,7 +189,7 @@ export const NoticeFiles = styled.div``
 
 export const ViewCount = styled.div`
   font-size: 11px;
-  margin-right: 20px;
+  margin-right: 15px;
   
  
 `;
