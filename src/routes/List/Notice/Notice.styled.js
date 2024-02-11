@@ -55,9 +55,12 @@ export const PostItem = styled.div`
    justify-content: space-between;
    padding: 10px;
    background: #ffffff;
-   border: 1px solid #dddddd;
+   border-bottom: 1px solid #dddddd;
    margin-bottom: 10px;
    width: 1300px;
+   &:hover{
+      background: #f9f9f9;
+   }
 `;
 
 export const PostTitleContainer = styled.div`
@@ -67,6 +70,7 @@ white-space: nowrap;
 width: 300px; 
 cursor: pointer;
 text-align: center;
+font-size: 12px;
 `;
 
 export const PostAuthor = styled.div`
@@ -111,7 +115,7 @@ export const PostListLabel = styled.div`
 
 
 export const PostNumber = styled.div`
-   font-size: 12px;
+   font-size: 11px;
    font-weight: bold;
 `;
 
@@ -213,18 +217,6 @@ export const NoticeContent = styled.div`
   
 `;
 
-export const NoticeItem = styled.div`
-  display: flex;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 8px;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 1200px;
-
-  &:hover {
-    background-color: #f9f9f9;
-  }
-`;
 
 
 export const NoticeId = styled.div`
@@ -261,4 +253,16 @@ export const Create = styled.div`
   display: flex;
   font-size: 12px;
 
+`;
+export const NoticeItem = styled.div`
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 1200px;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
 `;

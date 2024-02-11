@@ -3,9 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import * as S from './Notice.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
-import { Outlet } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
+const formatDate = (timestamp) => {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(timestamp).toLocaleString('ko-KR', options);
+};
 
 const generatePageNumbers = (totalPages) => {
   return Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -49,10 +53,11 @@ const Notice = () => {
   };
 
   const fetchNotices = async () => {
-    const response = await fetch(`https://eb-umust.umust302.shop/api/articles/NOTICE?page=${currentPage}&size=${pageSize}`);
+    const response = await fetch(`https://eb-umust.umust302.shop/api/articles/NOTICE?page=${currentPage}&size=${pageSize}&sort=createdAt,desc`);
     const data = await response.json();
     return Array.isArray(data.content) ? data.content : [];
   };
+  
 
   
   const navigateToDetail = (postId) => {
@@ -80,8 +85,23 @@ const Notice = () => {
             <S.PostListLabel>조회수</S.PostListLabel>
           </S.PostListHeader>
           
-
           <S.PostList>
+            {Array.isArray(notices) && notices.map((notice, index) => (
+              <Link key={notice.id} to={`/Board/notices/${notice.id}`} onClick={() => handleViewCount(notice.id)}>
+                <S.PostItem>
+                  <S.PostNumber>{index + 1 + currentPage * pageSize}</S.PostNumber>
+                  <S.PostTitleContainer>{notice.title.length > 13 ? `${notice.title.substring(0, 13)}...` : notice.title}</S.PostTitleContainer>
+                  <S.PostDate>{formatDate(notice.createdAt)}</S.PostDate>
+                  <S.PostAuthor>{notice.createdBy}</S.PostAuthor>
+                  <S.ViewCount> {notice.view}</S.ViewCount>
+                </S.PostItem>
+              </Link>
+            ))}
+          </S.PostList>
+
+
+
+{/*           <S.PostList>
             {notices.map(post => (
               <S.PostItem key={post.id}>
                 <S.PostNumber>{post.id}</S.PostNumber>
@@ -93,10 +113,11 @@ const Notice = () => {
                 <S.ViewCount>{post.view}</S.ViewCount>
               </S.PostItem>
             ))}
-          </S.PostList>
+          </S.PostList> */}
+
         </S.PostListWrapper>
 
-        
+
         <S.PaginationContainer>
         {generatePageNumbers(totalPages).map((pageNumber) => (
           <S.PaginationItem
