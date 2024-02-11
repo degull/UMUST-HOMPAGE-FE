@@ -56,16 +56,28 @@ const AlbumDetail = () => {
             <span>작성 시간: {(new Date(album.createdAt)).toLocaleString() || '알 수 없음'}</span>
             </S.AlbumDetails>
 
-            <ReactMarkdown>{album.content}</ReactMarkdown>
+            <ReactMarkdown
+               components={{
+                  img: ({ alt, src }) => (
+                     <img
+                        alt={alt}
+                        src={src}
+                        style={{ width: '500px', height: 'auto' }} // Add styling for fixed size
+                     />
+                  ),
+               }}
+            >
+               {album.content}
+            </ReactMarkdown>
 
-            {album.files && album.files.length > 0 && (
+{/*             {album.files && album.files.length > 0 && (
           <S.AlbumImages>
             {album.files.map((file) => (
               <img key={file.fileId} src={file.fileURL} alt={`Attached Image ${file.fileId}`} />
             ))}
           </S.AlbumImages>
         )}
-
+ */}
 
 
          </S.DetailContainer>
