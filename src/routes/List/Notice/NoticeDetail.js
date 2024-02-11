@@ -1,4 +1,3 @@
-// NoticeDetail.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import * as S from './Notice.styled';

@@ -26,6 +26,7 @@ import Album from './routes/List/Album/Album';
 import Map from './etc/Map/Map';
 import Contact from './etc/Contact/Contact';
 import Paper from './routes/Research/Paper/Paper';
+import AlbumDetail from './routes/List/Album/AlbumDetail';
 
 
 const App = () => {
@@ -59,6 +60,7 @@ const App = () => {
         <Route path="/List/Press" element={<Press />} />
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />
+        <Route path="/Board/albums/:albumId" element={<AlbumDetail />} />
 
 
         {/* 푸터 */}

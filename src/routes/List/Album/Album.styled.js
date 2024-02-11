@@ -116,3 +116,50 @@ export const PaginationItem = styled.div`
   border-radius: 4px;
   font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
 `;
+
+export const Border = styled.div`
+    border: 3px solid #999;
+    width: 1300px;
+    margin-top: 20px;
+`;
+
+
+export const DetailContainer = styled.div`
+width: 1000px;
+margin: 30px auto;
+margin-right: 150px;
+background-color: #fff;
+padding: 20px;
+`;
+
+export const AlbumTitle1 = styled.div`
+    display: block;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 18px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+`;
+
+export const AlbumImages = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  img {
+    width: 200px;
+    display: flex;
+    margin:0 auto;
+    height: auto;
+  }
+`;
+
+
+
+export const AlbumDetails = styled.div`
+   font-size: 11px;
+   text-align: end;
+   color: #777;
+   margin-bottom: 10px;
+`;
