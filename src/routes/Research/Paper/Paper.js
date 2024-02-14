@@ -3,6 +3,7 @@ import * as S from './Paper.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
 import axios from 'axios';
+import Dropdown from '../../../components/Menu/Research/Thesis/dropdown';
 
 const Paper = () => {
    const [paperList, setPaperList] = useState([]);
@@ -28,7 +29,7 @@ const Paper = () => {
     <S.Wrapper>
       <Header />
       <S.WrapImage src="/img/NoticeLogo.png" />
-      <S.MenuTab>구현예정</S.MenuTab>
+      <Dropdown />
       <S.MainContainer>
         <S.Title>논문</S.Title>
         <S.Memo>유머스트알엔디의 연구 성과입니다.</S.Memo>
