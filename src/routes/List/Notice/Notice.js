@@ -5,6 +5,7 @@ import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Dropdown from '../../../components/Menu/List/Notice/dropdown';
 
 const formatDate = (timestamp) => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -69,7 +70,7 @@ const Notice = () => {
       <Header />
       
       <S.WrapImage src="/img/NoticeLogo.png" />
-      <S.MenuTab>구현예정</S.MenuTab>
+      <Dropdown />
 
       <S.MainContainer>
         <S.Title>공지사항</S.Title>

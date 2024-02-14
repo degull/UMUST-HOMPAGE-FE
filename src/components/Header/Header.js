@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <S.Wrapper isScrolled={isScrolled} onMouseLeave={handleMouseLeave}>      <S.Header isScrolled={isScrolled}>
       <Link to="/">
-          <S.Logo src='/img/Logo.png' alt='Logo' />
+          <S.Logo src='/img/logo.png' alt='Logo' />
         </Link>
         <S.Menu>
           <S.Menu1 onMouseEnter={() => handleMouseEnter(1)}>회사소개</S.Menu1>
@@ -85,10 +85,19 @@ const Header = () => {
               )}           
               {activeMenu === 3 && (
                 <S.MenuStyle3>
-                  <S.SubMenu9 >의료기기</S.SubMenu9>
-                  <S.SubMenu10 >코스메슈티컬</S.SubMenu10>
-                  <S.SubMenu11 >비임상연구용역</S.SubMenu11>
-                  <S.SubMenu12>신약개발</S.SubMenu12>
+                  <S.SubMenu9>
+                    <Link to="/Business/Machine">의료기기</Link>
+                  </S.SubMenu9>
+                  <S.SubMenu10>
+                    <Link to="/Business/Cosmebusiness">코스메슈티컬</Link>
+                  </S.SubMenu10>
+                  <S.SubMenu11>
+                    <Link to="/Business/Nonclinical">비임상연구용역</Link>
+                  </S.SubMenu11>
+
+                  <S.SubMenu12>
+                    <Link to="/Business/Newmedi">신약개발</Link>
+                  </S.SubMenu12>
                 </S.MenuStyle3>
               )}
               {activeMenu === 4 && (
@@ -96,6 +105,7 @@ const Header = () => {
                   <S.SubMenu13 >
                     <Link to="/Product/Medical">의료기기</Link>
                   </S.SubMenu13>
+
                   <S.SubMenu14 >
                     <Link to="/Product/Cosmetic">코스메슈티컬</Link>
                   </S.SubMenu14>
@@ -103,8 +113,12 @@ const Header = () => {
               )}
               {activeMenu === 5 && (
                 <S.MenuStyle5>
-                  <S.SubMenu15>서비스 소개</S.SubMenu15>
-                  <S.SubMenu16>서비스 항목</S.SubMenu16>
+                  <S.SubMenu15>
+                    <Link to="/Cro/Intro">서비스 소개</Link>
+                  </S.SubMenu15>
+                  <S.SubMenu16>
+                    <Link to="/Cro/Crolnp">서비스 항목</Link>
+                  </S.SubMenu16>
                 </S.MenuStyle5>
               )}
               {activeMenu === 6 && (

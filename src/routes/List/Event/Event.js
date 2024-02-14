@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as S from './Event.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
+import Dropdown from '../../../components/Menu/List/Event/dropdown';
 const Event = () => {
    const [event, setEvnet] = useState([]);
 
@@ -17,7 +18,7 @@ const Event = () => {
       <S.Wrapper>
          <Header />
          <S.WrapImage src="/img/EventLogo.png"/>
-         <S.MenuTab>구현예정</S.MenuTab>
+         <Dropdown />
 
          <S.MainContainer>
             <S.Title>행사정보</S.Title>

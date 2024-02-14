@@ -1,21 +1,21 @@
-import React from 'react';
-import * as S from './Invest.styled';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-
+import React from "react";
+import * as S from "./Invest.styled";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Dropdown from "../../components/Menu/Intro/Invest/dropdown";
 
 const Invest = () => {
-   return (
-      <S.Wrapper>
-         <Header />
-         <S.WrapImage src="/img/invest.png"/>
-         <S.MenuTab>구현예정</S.MenuTab>
+  return (
+    <S.Wrapper>
+      <Header />
+      <S.WrapImage src="/img/InvestBanner.png" />
+      <Dropdown />
 
-         <S.MainComponent src="/img/invest_.png" />
+      <S.MainComponent src="/img/invest.png" />
 
-         <Footer />
-      </S.Wrapper>
-   );
+      <Footer />
+    </S.Wrapper>
+  );
 };
 
 export default Invest;

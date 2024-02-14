@@ -1,22 +1,20 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import * as S from './Cosmetic.styled';
+import React from "react";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import * as S from "./Cosmetic.styled";
+import Dropdown from "../../components/Menu/Product/Cosmetic/dropdown";
 
 const Cosmetic = () => {
-   return (
-      <S.Wrapper>
-         <Header />
-         <S.WrapImage src="/img/CEO.png"/>
-         <S.MenuTab>구현예정</S.MenuTab>
+  return (
+    <S.Wrapper>
+      <Header />
+      <S.WrapImage src="/img/CosmeticBanner.png" />
+      <Dropdown />
 
-         <S.MainComponent>
-            코스메슈티컬
-
-         </S.MainComponent>
-         <Footer />
-      </S.Wrapper>
-   );
+      <S.MainComponent>화장품</S.MainComponent>
+      <Footer />
+    </S.Wrapper>
+  );
 };
 
 export default Cosmetic;

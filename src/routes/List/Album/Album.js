@@ -5,6 +5,7 @@ import * as S from './Album.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
 import axios from 'axios';
+import Dropdown from '../../../components/Menu/List/Album/dropdown';
 
 const formatDate = (timestamp) => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -51,7 +52,7 @@ const Album = () => {
     <S.Wrapper>
       <Header />
       <S.WrapImage src="/img/AlbumLogo.png" />
-      <S.MenuTab>구현예정</S.MenuTab>
+      <Dropdown />
 
       <S.MainContainer>
         <S.Title>앨범</S.Title>

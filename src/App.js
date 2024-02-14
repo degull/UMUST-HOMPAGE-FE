@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Main from './components/Main/Main';
@@ -13,6 +12,10 @@ import Invest from './routes/Intro/Invest';
 
 import Tech from './routes/Research/Tech';
 import Lab from './routes/Research/Lab';
+/*  */
+import Patent from "./routes/Research/Patent";
+import Certi from "./routes/Research/Certi";
+
 
 import Medical from './routes/Product/Medical';
 import Cosmetic from './routes/Product/Cosmetic';
@@ -27,6 +30,24 @@ import Map from './etc/Map/Map';
 import Contact from './etc/Contact/Contact';
 import Paper from './routes/Research/Paper/Paper';
 import AlbumDetail from './routes/List/Album/AlbumDetail';
+
+import Material from './routes/Product/Material';
+import Matinfo from "./routes/Product/Matinfo";
+
+
+import Cosmebusiness from "./routes/Business/Cosmebusiness";
+import Machine from "./routes/Business/Machine";
+import NewMedi from "./routes/Business/Newmedi";
+import Nonclinical from "./routes/Business/Nonclinical";
+
+import Intro from "./routes/Cro/Intro";
+import Introinfo from "./routes/Cro/Introinfo";
+import Item from "./routes/Cro/Item";
+import Cropath from "./routes/Cro/Cropath";
+import Cropk from "./routes/Cro/Cropk";
+import Crolnp from "./routes/Cro/Crolnp";
+import Croorga from "./routes/Cro/Croorga";
+import Crotcm from "./routes/Cro/Crotcm";
 
 
 const App = () => {
@@ -50,8 +71,26 @@ const App = () => {
         <Route path="/Research/Paper" element={<Paper />} />
 
 
+
+        {/* Research */}
+
+        <Route path="/Research/Patent" element={<Patent />} />
+        <Route path="/Research/Certi" element={<Certi />} />
+
+
+        <Route path="/Business/Cosmebusiness" element={<Cosmebusiness />} />
+        <Route path="/Business/Machine" element={<Machine />} />
+        <Route path="/Business/NewMedi" element={<NewMedi />} />
+        <Route path="/Business/Nonclinical" element={<Nonclinical />} />
+
+
+
+
         <Route path="/Product/Medical" element={<Medical />} />
         <Route path="/Product/Cosmetic" element={<Cosmetic />} />
+        <Route path="/Product/Material" element={<Material />} />
+        <Route path="/Product/Matinfo" element={<Matinfo />} />
+
 
 
 
@@ -61,6 +100,17 @@ const App = () => {
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />
         <Route path="/Board/albums/:albumId" element={<AlbumDetail />} />
+
+        <Route path="/Cro/Crolnp" element={<Crolnp />} />
+
+        <Route path="/Cro/Intro" element={<Intro />} />
+        <Route path="/Cro/Introinfo" element={<Introinfo />} />
+        <Route path="/Cro/Item" element={<Item />} />
+        <Route path="/Cro/Cropath" element={<Cropath />} />
+        <Route path="/Cro/Cropk" element={<Cropk />} />
+        <Route path="/Cro/Croorga" element={<Croorga />} />
+        <Route path="/Cro/Crotcm" element={<Crotcm />} />
+
 
 
         {/* 푸터 */}

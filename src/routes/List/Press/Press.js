@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as S from './Press.styled';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
+import Dropdown from '../../../components/Menu/List/Press/dropdown';
 
 const Press = () => {
    const [press, setPress] = useState([]);
@@ -17,7 +18,7 @@ const Press = () => {
       <S.Wrapper>
          <Header />
          <S.WrapImage src="/img/PressLogo.png"/>
-         <S.MenuTab>구현예정</S.MenuTab>
+         <Dropdown />
 
          <S.MainContainer>
             <S.Title>보도자료</S.Title>

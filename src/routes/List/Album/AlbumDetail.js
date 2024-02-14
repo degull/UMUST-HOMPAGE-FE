@@ -62,7 +62,7 @@ const AlbumDetail = () => {
                      <img
                         alt={alt}
                         src={src}
-                        style={{ width: '500px', height: 'auto' }} // Add styling for fixed size
+                        style={{  width: '500px', height: 'auto', margin: '0 auto' }}
                      />
                   ),
                }}
@@ -79,9 +79,7 @@ const AlbumDetail = () => {
         )}
  */}
 
-
          </S.DetailContainer>
-
 
         </S.MainContainer>
          <Footer />
