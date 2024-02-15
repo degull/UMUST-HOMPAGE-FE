@@ -51,6 +51,7 @@ import Crotcm from "./routes/Cro/Crotcm";
 import PressDetail from './routes/List/Press/PressDetail';
 import EventDetail from './routes/List/Event/EventDetail';
 import LabDetail from './routes/Research/LabDetail';
+import PatentDetail from './routes/Research/PatentDetail';
 
 
 const App = () => {
@@ -82,6 +83,8 @@ const App = () => {
         {/* Research */}
 
         <Route path="/Research/Patent" element={<Patent />} />
+        <Route path="/Research/patents/:patentId" element={<PatentDetail/>}/>
+
         <Route path="/Research/Certi" element={<Certi />} />
 
 
