@@ -45,7 +45,7 @@ export const Menu = styled.div`
 export const SubMenu = styled.div``;
 
 export const MenuStyle1 = styled.div`
-  font: bold 13px/1 "arial";
+  font: bold 11px/1 "arial";
   background-color: #fff;
   color: #555;
   width: 200px;
@@ -57,11 +57,13 @@ export const MenuStyle1 = styled.div`
   cursor: pointer;
   left: 22.2rem;
   line-height: 3rem;
-  /* background: rgba(153, 153, 153, 0); */
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
 `;
 
 export const MenuStyle2 = styled.div`
-  font: bold 13px/1 "arial";
+  font: bold 11px/1 "arial";
   background-color: #fff;
   color: #555;
   width: 200px;
@@ -73,9 +75,12 @@ export const MenuStyle2 = styled.div`
   cursor: pointer;
   left: 34.7rem;
   line-height: 3rem;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
 `;
 export const MenuStyle3 = styled.div`
-  font: bold 13px/1 "arial";
+  font: bold 11px/1 "arial";
   background-color: #fff;
   width: 220px;
   color: #555;
@@ -87,6 +92,9 @@ export const MenuStyle3 = styled.div`
   cursor: pointer;
   left: 47.2rem;
   line-height: 3rem;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
 `;
 
 export const MenuStyle4 = styled.div`
@@ -289,8 +297,7 @@ export const EmptyBox = styled.div`
 `;
 export const Menu0 = styled.div`
   width: 50px;
-  font: bold 15px/1 "arial";
-  /* color: #555; */
+  font: bold 11px/1 "arial";
   padding: 10.2px 0px;
   transition: all 0.5s;
   cursor: pointer;
@@ -299,11 +306,15 @@ export const Menu0 = styled.div`
   }
   text-align: center;
   border-left: 2px solid lightgray;
+  & img {
+    width: 18px;
+    height: auto;
+  }
 `;
 
 export const Menu1 = styled.div`
   width: 200px;
-  font: bold 15px/1 "arial";
+  font: bold 13px/1 "arial";
   /* color: #555; */
   padding: 10.5px 0px;
   transition: all 0.5s;
@@ -315,13 +326,17 @@ export const Menu1 = styled.div`
   text-align: center;
   border-left: 2px solid lightgray;
   border-right: 2px solid lightgray;
-  /* border-bottom: 2px solid #333;
-  border-top: 2px solid #333; */
+  & img {
+    width: 18px;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
 `;
 
 export const Menu2 = styled.div`
   width: 200px;
-  font: bold 15px/1 "arial";
+  font: bold 13px/1 "arial";
   /* color: #555; */
   padding: 10.5px 0px;
   transition: all 0.5s;
@@ -331,13 +346,17 @@ export const Menu2 = styled.div`
   }
   text-align: center;
   border-right: 2px solid lightgray;
-  /* border-bottom: 2px solid #333;
-  border-top: 2px solid #333; */
+  & img {
+    width: 18px;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
 `;
 
 export const Menu3 = styled.div`
   width: 220px;
-  font: bold 15px/1 "arial";
+  font: bold 13px/1 "arial";
   /* color: #555; */
   padding: 10.5px 0px;
   transition: all 0.1s;
@@ -347,6 +366,10 @@ export const Menu3 = styled.div`
   }
   text-align: center;
   border-right: 2px solid lightgray;
-  /* border-bottom: 2px solid #333;
-  border-top: 2px solid #333; */
+  & img {
+    width: 18px;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 1px;
+  }
 `;

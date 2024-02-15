@@ -48,7 +48,7 @@ export const MenuStyle1 = styled.div`
 
 
 export const MenuStyle2 = styled.div`
-  font-size: 11px;
+  font: bold 11px/1 "arial";
   background-color: #fff;
   color: #555;
   width: 200px;
@@ -65,7 +65,7 @@ export const MenuStyle2 = styled.div`
   border-bottom: 1px solid #999;
 `;
 export const MenuStyle3 = styled.div`
-  font-size: 11px;
+  font: bold 11px/1 "arial";
   background-color: #fff;
   width: 200px;
   color: #555;
@@ -261,11 +261,6 @@ export const SubMenu18 = styled.div`
    position: relative; */
 `;
 export const SubMenu19 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
 `;
 export const SubMenu20 = styled.div`
 
@@ -333,7 +328,6 @@ export const Menu2 = styled.div`
 export const Menu3 = styled.div`
   width: 200px;
   font: bold 15px/1 "arial";
-  /* color: #555; */
   padding: 10.5px 0px;
   transition: all 0.1s;
   cursor: pointer;
@@ -342,6 +336,5 @@ export const Menu3 = styled.div`
   }
   text-align: center;
   border-right: 2px solid lightgray;
-  /* border-bottom: 2px solid #333;
-  border-top: 2px solid #333; */
+
 `;
