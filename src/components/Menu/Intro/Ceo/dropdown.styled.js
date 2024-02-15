@@ -8,28 +8,14 @@ export const Header = styled.div`
   left: 0;
 `;
 
-// export const Wrapper = styled.div`
-//   width: 100%;
-//   box-shadow: 0 1.5px 0 2px rgba(0, 0, 0, 0.03);
-//   position: relative;
-//   z-index: 3;
-//   margin: 0;
-//   padding: 0;
-// `;
 
 export const MenuBar = styled.div`
-  /* z-index: 3;
-  width: 950px;
-  height: 350px;
-  position: absolute;
-  top: 70px; */
   z-index: 3;
   width: 800px;
   height: 350px;
   background: rgba(153, 153, 153, 0);
   position: absolute;
   top: 40px;
-  /* background-color: yellow; */
 `;
 
 export const Menu = styled.div`
@@ -45,7 +31,7 @@ export const Menu = styled.div`
 export const SubMenu = styled.div``;
 
 export const MenuStyle1 = styled.div`
-  font-size: 11px;
+  font: bold 11px/1 "arial";
   background-color: #fff;
   color: #555;
   width: 199px;
@@ -282,19 +268,14 @@ export const SubMenu19 = styled.div`
    position: relative; */
 `;
 export const SubMenu20 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const EmptyBox = styled.div`
   width: 17%;
 `;
 export const Menu0 = styled.div`
   width: 50px;
-  font-size: 11px;
-  /* color: #555; */
+  font: bold 11px/1 "arial";
   padding: 10.2px 0px;
   transition: all 0.5s;
   cursor: pointer;
