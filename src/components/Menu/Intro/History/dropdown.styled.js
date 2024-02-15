@@ -8,21 +8,7 @@ export const Header = styled.div`
   left: 0;
 `;
 
-// export const Wrapper = styled.div`
-//   width: 100%;
-//   box-shadow: 0 1.5px 0 2px rgba(0, 0, 0, 0.03);
-//   position: relative;
-//   z-index: 3;
-//   margin: 0;
-//   padding: 0;
-// `;
-
 export const MenuBar = styled.div`
-  /* z-index: 3;
-  width: 950px;
-  height: 350px;
-  position: absolute;
-  top: 70px; */
   z-index: 3;
   width: 800px;
   height: 350px;

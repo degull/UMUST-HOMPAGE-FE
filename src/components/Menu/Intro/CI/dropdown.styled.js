@@ -16,7 +16,6 @@ export const MenuBar = styled.div`
   background: rgba(153, 153, 153, 0);
   position: absolute;
   top: 40px;
-  /* background-color: yellow; */
 `;
 
 export const Menu = styled.div`
