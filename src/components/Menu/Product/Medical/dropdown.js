@@ -26,7 +26,8 @@ const Dropdown = () => {
   return (
     <S.Header>
       <S.Menu isScrolled={isScrolled}>
-      <S.Menu0>
+        <S.EmptyBox></S.EmptyBox>
+        <S.Menu0>
           <Link to="/">
             <img src="/img/home.png" alt="Home" />
           </Link>
@@ -39,7 +40,6 @@ const Dropdown = () => {
           의료기기
           <img src="/img/down.png" alt="Dropdown" />
         </S.Menu2>
-
         {activeMenu && (
           <S.MenuBar>
             {activeMenu === 1 && (
