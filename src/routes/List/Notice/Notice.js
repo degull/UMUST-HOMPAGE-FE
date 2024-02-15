@@ -42,10 +42,8 @@ const Notice = () => {
 
   const handleViewCount = async (noticeId) => {
     try {
-      // Update the view count for the specific notice
       await axios.put(`https://eb-umust.umust302.shop/api/articles/${noticeId}/views`);
       
-      // Fetch the updated notice list after updating the view count
       const updatedNotices = await fetchNotices();
       setNotices(updatedNotices);
     } catch (error) {
@@ -100,19 +98,6 @@ const Notice = () => {
             ))}
           </S.PostList>
 
-{/* <S.PostList>
-            {notices.map(post => (
-              <S.PostItem key={post.id}>
-                <S.PostNumber>{post.id}</S.PostNumber>
-                <S.PostTitleContainer onClick={() => navigateToDetail(post.id)}>
-                  {post.title}
-                </S.PostTitleContainer>
-                <S.PostDate>{(new Date(post.createdAt)).toLocaleDateString()}</S.PostDate>
-                <S.PostAuthor>{post.createdBy}</S.PostAuthor>
-                <S.ViewCount>{post.view}</S.ViewCount>
-              </S.PostItem>
-            ))}
-          </S.PostList> */}
         </S.PostListWrapper>
 
 
