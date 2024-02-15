@@ -44,14 +44,14 @@ const Press = () => {
     try {
       await axios.put(`https://eb-umust.umust302.shop/api/articles/${pressId}/views`);
       
-      const updatedNotices = await fetchNotices();
-      setPress(updatedNotices);
+      const updatedPresses = await fetchPresses();
+      setPress(updatedPresses);
     } catch (error) {
       console.error('조회수 업데이트 중 오류 발생:', error);
     }
   };
 
-  const fetchNotices = async () => {
+  const fetchPresses = async () => {
     const response = await fetch(`https://eb-umust.umust302.shop/api/articles/NEWS?page=${currentPage}&size=${pageSize}&sort=createdAt,desc`);
     const data = await response.json();
     return Array.isArray(data.content) ? data.content : [];
@@ -82,6 +82,7 @@ const Press = () => {
                   <S.PostListLabel>작성자</S.PostListLabel>
                   <S.PostListLabel>조회수</S.PostListLabel>
                </S.PostListHeader>
+               
                <S.PostList>
             {Array.isArray(press) && press.map((press, index) => (
               <Link key={press.id} to={`/Board/presses/${press.id}`} onClick={() => handleViewCount(press.id)}>

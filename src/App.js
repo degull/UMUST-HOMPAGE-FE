@@ -48,6 +48,7 @@ import Cropk from "./routes/Cro/Cropk";
 import Crolnp from "./routes/Cro/Crolnp";
 import Croorga from "./routes/Cro/Croorga";
 import Crotcm from "./routes/Cro/Crotcm";
+import PressDetail from './routes/List/Press/PressDetail';
 
 
 const App = () => {
@@ -97,6 +98,7 @@ const App = () => {
         <Route path="/List/Notice" element={<Notice />} />
         <Route path="/Board/notices/:noticeId" element={<NoticeDetail />} />
         <Route path="/List/Press" element={<Press />} />
+        <Route path="/Board/presses/:pressId" element={<PressDetail />} />
         <Route path="/List/Event" element={<Event />} />
         <Route path="/List/Album" element={<Album />} />
         <Route path="/Board/albums/:albumId" element={<AlbumDetail />} />
