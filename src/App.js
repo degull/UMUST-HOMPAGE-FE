@@ -52,6 +52,7 @@ import PressDetail from './routes/List/Press/PressDetail';
 import EventDetail from './routes/List/Event/EventDetail';
 import LabDetail from './routes/Research/LabDetail';
 import PatentDetail from './routes/Research/PatentDetail';
+import CertiDetail from './routes/Research/CertiDetail';
 
 
 const App = () => {
@@ -86,6 +87,7 @@ const App = () => {
         <Route path="/Research/patents/:patentId" element={<PatentDetail/>}/>
 
         <Route path="/Research/Certi" element={<Certi />} />
+        <Route path="/Research/certifications/:certificationId" element={<CertiDetail/>}/>
 
 
         <Route path="/Business/Cosmebusiness" element={<Cosmebusiness />} />
