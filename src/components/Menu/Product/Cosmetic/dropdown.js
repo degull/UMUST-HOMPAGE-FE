@@ -28,11 +28,22 @@ const Dropdown = () => {
       <S.Menu isScrolled={isScrolled}>
         <S.EmptyBox></S.EmptyBox>
         <S.Menu0>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <img src="/img/home.png" alt="Home" />
+          </Link>
         </S.Menu0>
-        <S.Menu1 onClick={() => handleClick(1)}>제품</S.Menu1>
-        <S.Menu2 onClick={() => handleClick(2)}>코스메슈티컬</S.Menu2>
-        <S.Menu3 onClick={() => handleClick(3)}>화장품</S.Menu3>
+        <S.Menu1 onClick={() => handleClick(1)}>
+          제품
+          <img src="/img/down.png" alt="Dropdown" />  
+        </S.Menu1>
+        <S.Menu2 onClick={() => handleClick(2)}>
+          코스메슈티컬
+          <img src="/img/down.png" alt="Dropdown" />
+        </S.Menu2>
+        <S.Menu3 onClick={() => handleClick(3)}>
+          화장품
+          <img src="/img/down.png" alt="Dropdown" />
+        </S.Menu3>
 
         {activeMenu && (
           <S.MenuBar>

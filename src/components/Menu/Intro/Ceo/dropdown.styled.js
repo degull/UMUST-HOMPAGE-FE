@@ -254,11 +254,6 @@ export const SubMenu17 = styled.div`
    position: relative; */
 `;
 export const SubMenu18 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
 `;
 export const SubMenu19 = styled.div`
 `;
