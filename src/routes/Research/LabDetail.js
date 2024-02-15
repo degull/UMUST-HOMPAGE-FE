@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import Header from '../../../components/Header/Header';
-import Footer from '../../../components/Footer/Footer';
-import * as S from './Album.styled';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import * as S from './Lab.styled';
 
-const AlbumDetail = () => {
+const LabDetail = () => {
    const navigate = useNavigate();
-   const { albumId } = useParams(); 
-   const [ album, setAlbum ] = useState(null);
+   const { blogId } = useParams(); 
+   const [ Blog, setBlog ] = useState(null);
    const [showConfirmation, setShowConfirmation] = useState(false);
- 
+
    useEffect(() => {
-      const fetchNoticeById = async () => {
+      const fetchBlogById = async () => {
         try {
-          const response = await fetch(`https://umust302.shop/api/articles/${albumId}`, {
+          const response = await fetch(`https://umust302.shop/api/articles/${blogId}`, {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
@@ -24,21 +24,20 @@ const AlbumDetail = () => {
           const data = await response.json();
           
           console.log('Received album data:', data);
-          console.log(albumId)
-          setAlbum(data);
+          console.log(blogId)
+          setBlog(data);
         } catch (error) {
           console.error('Error fetching notice:', error);
         }
       };
   
       // 컴포넌트가 처음 마운트될 때와 게시글 번호가 변경될 때마다 데이터를 불러옴
-      fetchNoticeById();
-    }, [albumId]);
+      fetchBlogById();
+    }, [blogId]);
   
-    if (!album) {
+    if (!Blog) {
       return <div>로딩 중...</div>;
     }
-
 
    return (
       <S.Wrapper>
@@ -49,11 +48,11 @@ const AlbumDetail = () => {
 
 
             <S.DetailContainer>
-            <S.AlbumTitle1>{album.title || '제목 없음'}</S.AlbumTitle1>
+            <S.AlbumTitle1>{Blog.title || '제목 없음'}</S.AlbumTitle1>
 
             <S.AlbumDetails>
-            <span>작성자: {album.createdBy || '짱구'}</span><br/>
-            <span>작성 시간: {(new Date(album.createdAt)).toLocaleString() || '알 수 없음'}</span>
+            <span>작성자: {Blog.createdBy || '짱구'}</span><br/>
+            <span>작성 시간: {(new Date(Blog.createdAt)).toLocaleString() || '알 수 없음'}</span>
             </S.AlbumDetails>
 
             <ReactMarkdown
@@ -67,7 +66,7 @@ const AlbumDetail = () => {
                   ),
                }}
             >
-               {album.content}
+               {Blog.content}
             </ReactMarkdown>
 
          </S.DetailContainer>
@@ -78,4 +77,4 @@ const AlbumDetail = () => {
    );
 };
 
-export default AlbumDetail;
+export default LabDetail;

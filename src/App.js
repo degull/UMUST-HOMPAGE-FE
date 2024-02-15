@@ -50,6 +50,7 @@ import Croorga from "./routes/Cro/Croorga";
 import Crotcm from "./routes/Cro/Crotcm";
 import PressDetail from './routes/List/Press/PressDetail';
 import EventDetail from './routes/List/Event/EventDetail';
+import LabDetail from './routes/Research/LabDetail';
 
 
 const App = () => {
@@ -67,7 +68,11 @@ const App = () => {
         <Route path="/Intro/Invest" element={<Invest />} />
 
         <Route path="/Research/Tech" element={<Tech />} />
+
+
         <Route path="/Research/Lab" element={<Lab />} />
+        <Route path="/Research/blogs/:blogId" element={<LabDetail />} />
+
 
         {/* 논문 */}
         <Route path="/Research/Paper" element={<Paper />} />
