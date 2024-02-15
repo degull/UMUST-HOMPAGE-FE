@@ -125,133 +125,56 @@ export const MenuStyle6 = styled.div`
 `;
 
 export const SubMenu1 = styled.div`
-  /* font: bold 13px/1 "arial";
-  padding: 15px 0px;
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
-  color: blue;
-  margin-left: 4rem; */
+
 `;
 
 export const SubMenu2 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 0px;
-   transition: all 0.5s;
-   position: relative;
-   &:hover{
-      color: #fff;
-   } */
+
 `;
 export const SubMenu3 = styled.div`
-  /* font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
-  // transform: translateX(4rem);
+
 `;
 export const SubMenu4 = styled.div`
-  /* font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
-  // margin-left: 4rem;
+
 `;
 export const SubMenu5 = styled.div`
-  /* font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
-  // margin-left: 4rem;
+
 `;
 export const SubMenu6 = styled.div`
-  /* font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative;
-   */
+
 `;
 export const SubMenu7 = styled.div`
-  /* font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative;
-    */
+
 `;
 export const SubMenu8 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu9 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu10 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu11 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu12 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu13 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu14 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu15 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu16 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu17 = styled.div`
-  /*    font: bold 15px/1 "arial";
-   color: #555;
-   padding: 20px 40px;
-   transition: all 0.5s;
-   position: relative; */
+
 `;
 export const SubMenu18 = styled.div`
 `;
