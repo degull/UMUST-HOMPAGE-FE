@@ -53,6 +53,7 @@ import EventDetail from './routes/List/Event/EventDetail';
 import LabDetail from './routes/Research/LabDetail';
 import PatentDetail from './routes/Research/PatentDetail';
 import CertiDetail from './routes/Research/CertiDetail';
+import MatinfoDetail from './routes/Product/MatinfoDetail';
 
 
 const App = () => {
@@ -102,6 +103,7 @@ const App = () => {
         <Route path="/Product/Cosmetic" element={<Cosmetic />} />
         <Route path="/Product/Material" element={<Material />} />
         <Route path="/Product/Matinfo" element={<Matinfo />} />
+        <Route path="/product/infos/:infoId" element={<MatinfoDetail />} /> 
 
 
 
