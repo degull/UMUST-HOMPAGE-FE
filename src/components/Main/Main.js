@@ -195,8 +195,10 @@ export default function Main() {
       <S.Section2>
         <S.Icontainer>
           <S.IconContainer>
+            <Link to="/Research/Lab">
               <S.Tech src='/img/Tech.png'/>
               <S.TectTitle>핵심기술</S.TectTitle>
+            </Link>
           </S.IconContainer>
 
           <S.IconContainer>
@@ -206,14 +208,19 @@ export default function Main() {
             </Link>
           </S.IconContainer>
 
+
           <S.IconContainer>
-              <S.Authentication src='/img/Authentication.png'/>
-              <S.AuthenticationTitle>인증현황</S.AuthenticationTitle>
+            <Link to="/Research/Certi">
+                <S.Authentication src='/img/Authentication.png'/>
+                <S.AuthenticationTitle>인증현황</S.AuthenticationTitle>
+            </Link>
           </S.IconContainer>
 
           <S.IconContainer>
+            <Link to="/Cro/Intro">
               <S.Research src='/img/service.png'/>
               <S.ResearchTitle>연구용역서비스</S.ResearchTitle>
+            </Link>
           </S.IconContainer>
 
           <S.IconContainer>

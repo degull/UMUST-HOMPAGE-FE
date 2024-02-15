@@ -72,7 +72,7 @@ const Dropdown = () => {
                 </S.SubMenu8>
 
                 <S.SubMenu9>
-                  <Link to="/Research/Thesis">논문</Link>
+                  <Link to="/Research/Paper">논문</Link>
                 </S.SubMenu9>
 
                 <S.SubMenu10>
