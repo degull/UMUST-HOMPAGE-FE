@@ -251,6 +251,8 @@ export const LeftContent = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+  /* display: inline-block; */
 `;
 
 export const Section3Right = styled.div`
@@ -272,7 +274,33 @@ export const Cosmetic = styled.img`
    width: 270px;
    height: 220px;
    margin-bottom: 10px;
+   border-radius: 10px;
 `;
+
+export const CosmeticLabelColor = styled.div`
+  position: absolute;
+
+  width: 250px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+`;
+
+export const CosmeticLabel = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  z-index: 5;
+  font-size: 12px;
+  font-weight: bold;
+  & img {
+   width: 15px;
+   margin-left: 20px;
+  }
+  `;
 
 export const RightContent = styled.div`
    text-align: center;

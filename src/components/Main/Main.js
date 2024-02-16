@@ -244,8 +244,13 @@ export default function Main() {
         <S.Section3Left>
             <S.LeftContent>
               <S.Medical src='/img/Medical.png'/>
-              <S.Cosmetic src='/img/Cosmetic.png'/>
 
+              <S.Cosmetic src='/img/Cosmetics.jpg'/>
+              <S.CosmeticLabelColor></S.CosmeticLabelColor>
+              <S.CosmeticLabel>
+                ROSAMIE
+                <img src='/img/right.png' />
+              </S.CosmeticLabel>
               
             </S.LeftContent>
             <S.TextContainer>

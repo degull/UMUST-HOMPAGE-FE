@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 
 export const WrapImage = styled.img`
    width: 100%;
-   height: 230px;
+   height: 260px;
 `;
 
 export const MenuTab = styled.div`
