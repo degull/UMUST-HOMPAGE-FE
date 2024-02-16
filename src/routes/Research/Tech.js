@@ -11,7 +11,9 @@ const Tech = () => {
       <S.WrapImage src="/img/TechBanner.png" />
       <Dropdown />
 
-      <S.MainComponent>기술개요</S.MainComponent>
+      <S.MainComponent>
+        <S.MainImg src="/img/test (2).png" />
+      </S.MainComponent>
       <Footer />
     </S.Wrapper>
   );

@@ -11,7 +11,7 @@ const Cosmetic = () => {
       <S.WrapImage src="/img/CosmeticBanner.png" />
       <Dropdown />
 
-      <S.MainComponent>화장품</S.MainComponent>
+      <S.MainImg src="/img/test (2).png" />
       <Footer />
     </S.Wrapper>
   );

@@ -11,7 +11,7 @@ const Medical = () => {
       <S.WrapImage src="/img/MedicalBanner.png" />
       <Dropdown />
 
-      <S.MainComponent>의료기기</S.MainComponent>
+      <S.MainImg src="/img/test (2).png" />
       <Footer />
     </S.Wrapper>
   );

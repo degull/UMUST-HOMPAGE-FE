@@ -4,7 +4,6 @@ export const Wrapper = styled.div``;
 
 export const WrapImage = styled.img`
   width: 100%;
-  /* height: 15vw; */
 `;
 
 export const MenuTab = styled.div`
@@ -18,4 +17,9 @@ export const MainComponent = styled.div`
   width: 1150px;
   margin: 0 auto;
   display: flex;
+`;
+
+export const MainImg = styled.img`
+  width: 600px;
+  margin: 0 auto;
 `;

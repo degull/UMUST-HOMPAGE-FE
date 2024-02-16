@@ -84,7 +84,7 @@ export const MenuStyle3 = styled.div`
 `;
 
 export const MenuStyle4 = styled.div`
-  font: bold 13px/1 "arial";
+  font: bold 11px/1 "arial";
   color: #555;
   padding: 20px 40px;
   background-color: #fff;
@@ -296,7 +296,7 @@ export const Menu0 = styled.div`
 
 export const Menu1 = styled.div`
   width: 200px;
-  font: bold 11px/1 "arial";
+  font: bold 13px/1 "arial";
   padding: 10.5px 0px;
   transition: all 0.5s;
   position: relative;
@@ -317,7 +317,7 @@ export const Menu1 = styled.div`
 
 export const Menu2 = styled.div`
   width: 200px;
-  font: bold 11px/1 "arial";
+  font: bold 13px/1 "arial";
   padding: 10.5px 0px;
   transition: all 0.5s;
   cursor: pointer;
@@ -336,7 +336,7 @@ export const Menu2 = styled.div`
 
 export const Menu3 = styled.div`
   width: 220px;
-  font: bold 15px/1 "arial";
+  font: bold 13px/1 "arial";
   padding: 10.5px 0px;
   transition: all 0.1s;
   cursor: pointer;

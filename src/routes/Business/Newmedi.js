@@ -12,7 +12,7 @@ const Newmedi = () => {
       <Header />
       <S.WrapImage src="/img/CEO.png" />
       <Dropdown />
-      <S.MainComponent src="/img/ceoIntro.png" />
+      <S.MainComponent src="/img/test (2).png" />
       <Footer />
     </S.Wrapper>
   );

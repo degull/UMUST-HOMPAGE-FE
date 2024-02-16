@@ -19,3 +19,7 @@ export const MainComponent = styled.img`
   margin: 0 auto;
   display: flex;
 `;
+export const MainImg = styled.img`
+  width: 600px;
+  margin: 0 auto;
+`;
