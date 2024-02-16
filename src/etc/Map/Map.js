@@ -43,9 +43,7 @@ const Map = () => {
             title: el.title,
           });
 
-          // (선택 사항) 마커에 이벤트 리스너 추가
           window.kakao.maps.event.addListener(marker, 'click', () => {
-            // 마커 클릭 시 수행할 작업 추가
           });
         });
       } else {
