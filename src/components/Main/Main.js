@@ -243,14 +243,20 @@ export default function Main() {
       <S.Section3>
         <S.Section3Left>
             <S.LeftContent>
-              <S.Medical src='/img/Medical.png'/>
-
+              <S.Medical src='/img/amust.jpg'/>
+              <S.MedicalLabelColor />
+              <S.MedicalLabel>
+                의료기기
+                <img src='/img/right.png' />
+              </S.MedicalLabel>
               <S.Cosmetic src='/img/Cosmetics.jpg'/>
-              <S.CosmeticLabelColor></S.CosmeticLabelColor>
+              <S.CosmeticLabelColor />
+              <Link to="https://smartstore.naver.com/umustrnd" >
               <S.CosmeticLabel>
                 ROSAMIE
                 <img src='/img/right.png' />
               </S.CosmeticLabel>
+              </Link>
               
             </S.LeftContent>
             <S.TextContainer>
@@ -307,7 +313,7 @@ export default function Main() {
 
         <S.Section3Right>
             <S.RightContent>
-              <S.Album src='/img/test_01.gif'/>
+              <S.Album src='/img/cosmetic.png'/>
             </S.RightContent>
         </S.Section3Right>
       </S.Section3>

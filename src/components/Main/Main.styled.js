@@ -78,21 +78,24 @@ export const Title = styled.h1`
    font-size: 20px;
    margin: -60px 0 0 80px;
    cursor: default;
+   font-weight: bold;
 `;
 
 export const Text1 = styled.p`
    font-size: 15px;
    cursor: default;
+   font-weight: 800;
 `;
 
 export const Text2 = styled.p`
    font-size: 13px;
    cursor: default;
+   margin-top: 10px;
 `;
 
 export const MoreBtn = styled.img`
    width: 80px;
-   bottom: 20px;
+   margin-top: 30px;
    right: 20px;
    cursor: pointer;
 `;
@@ -252,7 +255,6 @@ export const LeftContent = styled.div`
    justify-content: center;
    align-items: center;
    position: relative;
-  /* display: inline-block; */
 `;
 
 export const Section3Right = styled.div`
@@ -263,12 +265,42 @@ export const Section3Right = styled.div`
    box-sizing: border-box;
 `;
 
+
 export const Medical = styled.img`
    width: 270px;
    height: 220px;
    margin-right: 30px;
    margin-bottom: 10px;
+   border-radius: 10px;
 `;
+
+export const MedicalLabelColor = styled.div`
+  position: absolute;
+  width: 270px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  margin-left: -281px;
+  margin-top: 180px;
+`;
+
+export const MedicalLabel = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  z-index: 1;
+  font-size: 12px;
+  margin-left: -220px;
+  margin-top: 90px;
+  font-weight: bold;
+  & img {
+   width: 15px;
+   margin-left: 20px;
+  }
+  `;
 
 export const Cosmetic = styled.img`
    width: 270px;
@@ -279,11 +311,12 @@ export const Cosmetic = styled.img`
 
 export const CosmeticLabelColor = styled.div`
   position: absolute;
-
   width: 250px;
   height: 30px;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
+  border-radius: 7px;
+  margin-left: 300px;
+  margin-top: 180px;
 `;
 
 export const CosmeticLabel = styled.div`
@@ -293,8 +326,10 @@ export const CosmeticLabel = styled.div`
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 20px;
-  z-index: 5;
+  z-index: 1;
   font-size: 12px;
+  margin-left: 80px;
+  margin-top: 90px;
   font-weight: bold;
   & img {
    width: 15px;
